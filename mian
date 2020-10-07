@@ -68,3 +68,16 @@ V2ray控制面板
 
 1
 wget https://www.moerats.com/usr/shell/swap.sh && bash swap.sh
+
+七、cloudfare   works设置
+addEventListener(
+"fetch",event => {
+let url=new URL(event.request.url);
+url.hostname="主机域名";
+let request=new Request(url,event.request);
+event. respondWith(
+fetch(request)
+)
+}
+)
+
